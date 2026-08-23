@@ -22,14 +22,14 @@
 8. Confirm the password.
 9. Click **Register**.
 
-**Expected Result:**
-
-The user account is successfully created and the registration confirmation message is displayed.
-
 **Actual Result:**
 
-Not executed.
+The user account was successfully created and the message "Your registration completed" was displayed.
 
 **Status:**
 
-NOT RUN
+PASS
+
+**Execution Date:**
+
+August 23, 2026
