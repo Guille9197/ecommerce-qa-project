@@ -34,5 +34,5 @@ PASS
 
 August 23, 2026
 
-Evidence:
-TC-REG-001 Registration Success
+**Evidence:**
+[TC-REG-001 Registration Success](./evidence/TC-REG-001-registration-success.png)
