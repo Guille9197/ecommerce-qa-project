@@ -65,12 +65,16 @@ Registration should not be completed and an appropriate validation message shoul
 
 **Actual Result:**
 
-Not executed.
+The registration was not completed and the validation message "Email is required." was displayed below the Email field.
+
+**Status:**
+
+PASS
 
 **Execution Date:**
 
 August 23, 2026
 
-**Status:**
+**Evidence:**
 
-NOT RUN
+[TC-REG-002 Registration - Empty Email](./evidence/TC-REG-002-registration-empty-email.png)
