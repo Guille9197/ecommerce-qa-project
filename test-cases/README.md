@@ -107,12 +107,16 @@ Registration should not be completed and an appropriate validation message shoul
 
 **Actual Result:**
 
-Not executed.
+The registration was not completed and the validation message "Wrong email" was displayed below the Email field.
+
+**Status:**
+
+PASS
 
 **Execution Date:**
 
 August 25, 2026
 
-**Status:**
+**Evidence:**
 
-NOT RUN
+[TC-REG-003 Registration - Invalid Email](./evidence/TC-REG-003-registration-invalid-email.png)
