@@ -144,13 +144,11 @@ August 25, 2026
 9. Click **Register**.
 
 **Expected Result:**
-
-Registration should not be completed and an appropriate validation message should be displayed indicating that the email address is already registered.
+The system should not allow registration using an email address that is already registered. An appropriate error message should be displayed.
 
 **Actual Result:**
+The system allowed the registration and displayed the message "Your registration completed".
 
-Not executed.
+**Status:** Failed
 
-**Status:**
-
-NOT RUN
+**Evidence:** [TC-REG-004 Duplicate Email Registration](evidence/TC-REG-004-duplicate-email-registration-fail.png)
