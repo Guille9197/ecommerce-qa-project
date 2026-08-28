@@ -152,3 +152,36 @@ The system allowed the registration and displayed the message "Your registration
 **Status:** Failed
 
 **Evidence:** [TC-REG-004 Duplicate Email Registration](evidence/TC-REG-004-duplicate-email-registration-fail.png)
+
+---
+
+## TC-REG-005 — Register with empty password
+
+**Priority:** High
+
+### Preconditions:
+- User is not registered.
+- Registration page is accessible.
+
+### Test Steps:
+1. Open the nopCommerce Demo Store.
+2. Click **Register**.
+3. Select the required gender option.
+4. Enter a valid first name.
+5. Enter a valid last name.
+6. Enter a unique valid email address.
+7. Leave the **Password** field empty.
+8. Enter a value in the **Confirm password** field.
+9. Click **Register**.
+
+### Expected Result:
+The system should not allow the registration and should display a validation message indicating that the password is required.
+
+### Actual Result:
+The system did not allow the registration, but displayed the message "The password and confirmation password do not match" instead of indicating that the password field is required.
+
+### Status:
+**Failed**
+
+### Evidence:
+[TC-REG-005 Empty Password](evidence/TC-REG-005-empty-password-fail.png)
