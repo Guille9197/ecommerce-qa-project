@@ -120,3 +120,37 @@ August 25, 2026
 **Evidence:**
 
 [TC-REG-003 Registration - Invalid Email](./evidence/TC-REG-003-registration-invalid-email.png)
+
+---
+
+### TC-REG-004 — Register with an existing email address
+
+**Priority:** High
+
+**Preconditions:**
+- An account with the test email address is already registered.
+- Registration page is accessible.
+
+**Test Steps:**
+
+1. Open the nopCommerce Demo Store.
+2. Click **Register**.
+3. Select the required gender option.
+4. Enter a valid first name.
+5. Enter a valid last name.
+6. Enter an email address that is already registered.
+7. Enter a valid password.
+8. Confirm the password.
+9. Click **Register**.
+
+**Expected Result:**
+
+Registration should not be completed and an appropriate validation message should be displayed indicating that the email address is already registered.
+
+**Actual Result:**
+
+Not executed.
+
+**Status:**
+
+NOT RUN
