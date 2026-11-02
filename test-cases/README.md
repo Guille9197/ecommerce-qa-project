@@ -254,4 +254,4 @@ November 2, 2026
 
 **Evidence:**
 
-TC-REG-007 Registration - Empty Password Confirmation
+[TC-REG-007 Registration - Empty Password Confirmation](evidence/TC-REG-007-registration-empty-password-confirmation.png)
