@@ -256,7 +256,7 @@ November 2, 2026
 
 [TC-REG-007 Registration - Empty Password Confirmation](evidence/TC-REG-007%20Registration%20-%20Empty%20Password%20Confirmation.png)
 
-### TC-REG-008 — Register with password below minimum length
+### TC-REG-008 — Register with empty first name
 
 **Priority:** High
 
@@ -268,16 +268,16 @@ November 2, 2026
 1. Open the nopCommerce Demo Store.
 2. Click Register.
 3. Select the required gender option.
-4. Enter a valid first name.
+4. Leave the First name field empty.
 5. Enter a valid last name.
 6. Enter a unique email address.
-7. Enter a password shorter than the minimum allowed length (e.g., 12345).
-8. Enter the same value in the Confirm password field.
+7. Enter a valid password.
+8. Confirm the password.
 9. Click Register.
 
 **Expected Result:**
 
-The system should not allow registration and should display a validation message indicating that the password does not meet the minimum length requirement.
+The system should not allow registration and should display a validation message indicating that the First name field is required.
 
 **Actual Result:**
 
