@@ -217,17 +217,15 @@ The system did not allow the registration and displayed the message "The passwor
 ### Evidence:
 [TC-REG-006 Password Confirmation Mismatch](evidence/TC-REG-006-password-confirmation-mismatch.png)
 
-# TC-REG-007 — Register with empty password confirmation
+### TC-REG-007 — Register with empty password confirmation
 
-**Module:** Registration  
-**Priority:** High  
-**Type:** Negative / Validation Testing
+**Priority:** High
 
-### Preconditions
+**Preconditions:**
 - User is not registered.
 - Registration page is accessible.
 
-### Test Steps
+**Test Steps:**
 1. Open the nopCommerce Demo Store.
 2. Click Register.
 3. Select the required gender option.
@@ -238,17 +236,22 @@ The system did not allow the registration and displayed the message "The passwor
 8. Leave the Confirm password field empty.
 9. Click Register.
 
-### Expected Result
+**Expected Result:**
+
 The system should not allow registration and should display a validation message indicating that the password confirmation field is required.
 
-### Actual Result
-To be completed after test execution.
+**Actual Result:**
 
-### Status
-Not Executed
+The registration was not completed, and the system displayed a validation message indicating that the Confirm password field is required.
 
-### Execution Date
-Pending
+**Status:**
 
-### Evidence
-Pending
+PASS
+
+**Execution Date:**
+
+November 2, 2026
+
+**Evidence:**
+
+TC-REG-007 Registration - Empty Password Confirmation
