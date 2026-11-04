@@ -336,3 +336,40 @@ November 4, 2026
 **Evidence:**
 
 [TC-REG-009 Empty Last Name](evidence/TC-REG-009_Register_Empty_Last_Name.png)
+
+### TC-REG-010 — Register with Invalid Password Confirmation
+
+**Module:** 
+Registration  
+**Priority:** 
+High  
+**Preconditions:**
+- The user is not registered.
+- The Registration page is accessible.
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Click on **Register**.
+3. Select the required gender option.
+4. Enter a valid first name.
+5. Enter a valid last name.
+6. Enter a unique email address.
+7. Enter a valid password.
+8. Enter a different password in the **Confirm password** field.
+9. Click **Register**.
+
+**Expected Result:**
+The system should reject the registration and display a validation message indicating that the password and confirmation password do not match.
+
+**Actual Result:**
+The system rejected the registration and displayed a validation message indicating that the password and confirmation password do not match.
+
+**Status:** 
+PASS
+
+**Execution Date:** 
+November 4, 2026
+
+**Evidence:** 
+[TC-REG-010 Invalid Password Confirmation](evidence/TC-REG-010_Register_Invalid_Password_Confirmation.png)
+
