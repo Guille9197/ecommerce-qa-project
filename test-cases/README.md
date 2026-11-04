@@ -294,4 +294,4 @@ November 4, 2026
 
 **Evidence:**
 
-[TC-REG-008 Registration - Empty First Name.jpg](evidence/TC-REG-008%20Registration%20-%20Empty%20First%20Name.jpg)
+test-cases/evidence/`TC-REG-008_Register_Empty_First_Name.jpg.png
