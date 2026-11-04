@@ -295,3 +295,44 @@ November 4, 2026
 **Evidence:**
 
 [TC-REG-008 Empty First Name](evidence/TC-REG-008_Register_Empty_First_Name.png)
+
+### TC-REG-009 — Register with empty last name
+
+**Priority:** High
+
+**Preconditions:**
+
+- User is not registered.
+- Registration page is accessible.
+
+**Test Steps:**
+
+1. Open the nopCommerce Demo Store.
+2. Click Register.
+3. Select the required gender option.
+4. Enter a valid first name.
+5. Leave the Last name field empty.
+6. Enter a unique email address.
+7. Enter a valid password.
+8. Confirm the password.
+9. Click Register.
+
+**Expected Result:**
+
+The system should not allow registration and should display a validation message indicating that the Last name field is required.
+
+**Actual Result:**
+
+To be completed after test execution.
+
+**Status:**
+
+Not Executed
+
+**Execution Date:**
+
+Pending
+
+**Evidence:**
+
+Pending
