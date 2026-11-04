@@ -323,16 +323,16 @@ The system should not allow registration and should display a validation message
 
 **Actual Result:**
 
-To be completed after test execution.
+The system prevented registration and displayed a validation message indicating that the Last name field is required. No account was created.
 
 **Status:**
 
-Not Executed
+PASS
 
 **Execution Date:**
 
-Pending
+November 4, 2026
 
 **Evidence:**
 
-Pending
+[evidence/TC-REG-009_Register_Empty_Last_Name.png](evidence/TC-REG-009_Register_Empty_Last_Name.png)
