@@ -373,3 +373,59 @@ November 4, 2026
 **Evidence:** 
 [TC-REG-010 Invalid Password Confirmation](evidence/TC-REG-010_Register_Invalid_Password_Confirmation.png)
 
+### TC-LOGIN-001 — Login with Valid Credentials
+
+**Module:** Login & Authentication
+
+**Priority:** High
+
+**Preconditions:**
+- A registered user account exists.
+- The user is logged out.
+- The Login page is accessible.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Email | Registered test account email |
+| Password | Correct password associated with the account |
+| Account Status | Registered |
+| User Type | Registered Customer |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Click on **Log in**.
+3. Enter a registered email address.
+4. Enter the correct password.
+5. Click the **Log in** button.
+
+**Expected Result:**
+
+The system should authenticate the user successfully and redirect them to the appropriate page. The user's account information should be accessible, and the login option should be replaced by account-related options.
+
+**Actual Result:**
+
+The system successfully authenticated the user using valid credentials. The user was redirected to the store, and account-related options became available.
+
+**Status:** PASS
+
+**Execution Date:** November 5, 2026
+
+**Evidence:** 
+[TC-REG-009 Empty Last Name](evidence/TC-REG-009_Register_Empty_Last_Name.png)
+
+[TC-REG-010 Invalid Password Confirmation](evidence/TC-REG-010_Register_Invalid_Password_Confirmation.png)
+
