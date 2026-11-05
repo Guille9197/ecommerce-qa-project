@@ -539,3 +539,59 @@ The system rejected the login attempt when the password field was left empty. A 
 **Evidence:** 
 
 [TC-LOGIN-003 Login with Empty Password](evidence/TC-LOGIN-003_Login_Empty_Password.png)
+
+### TC-LOGIN-004 — Access Customer Account After Login
+
+**Module:** Login & Authentication
+
+**Priority:** High
+
+**Preconditions:**
+- A registered user account exists.
+- The user is logged out.
+- The Login page is accessible.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Email | Registered test account email |
+| Password | Correct account password |
+| Account Status | Registered |
+| User Type | Registered Customer |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Click on **Log in**.
+3. Enter valid account credentials.
+4. Click the **Log in** button.
+5. Verify that the user is successfully authenticated.
+6. Click on **My account**.
+
+**Expected Result:**
+
+The system should allow the authenticated user to access the My Account page and display the customer account information and available account sections.
+
+**Actual Result:**
+
+The system successfully authenticated the user and allowed access to the My Account page. The customer account information and available account sections were displayed.
+
+**Status:** PASS
+
+**Execution Date:** November 5, 2026
+
+**Evidence:** 
+
+[TC-LOGIN-004 Access Customer Account](evidence/TC-LOGIN-004_Access_Customer_Account.png)
