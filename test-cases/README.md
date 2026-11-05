@@ -425,7 +425,7 @@ The system successfully authenticated the user using valid credentials. The user
 **Execution Date:** November 5, 2026
 
 **Evidence:** 
-[TC-REG-009 Empty Last Name](evidence/TC-REG-009_Register_Empty_Last_Name.png)
 
-[TC-REG-010 Invalid Password Confirmation](evidence/TC-REG-010_Register_Invalid_Password_Confirmation.png)
+[TC-REG-001 Registration Success](evidence/TC-REG-001-registration-success.png)
 
+[TC-REG-001 Registration Completed](evidence/TC-REG-001_Registration_Completed.png)
