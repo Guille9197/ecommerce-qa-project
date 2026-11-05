@@ -429,3 +429,58 @@ The system successfully authenticated the user using valid credentials. The user
 [TC-REG-001 Registration Success](evidence/TC-REG-001-registration-success.png)
 
 [TC-REG-001 Registration Completed](evidence/TC-REG-001_Registration_Completed.png)
+
+### TC-LOGIN-002 — Login with Invalid Password
+
+**Module:** Login & Authentication
+
+**Priority:** High
+
+**Preconditions:**
+- A registered user account exists.
+- The user is logged out.
+- The Login page is accessible.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Email | Registered test account email |
+| Password | Incorrect password |
+| Account Status | Registered |
+| User Type | Registered Customer |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Click on **Log in**.
+3. Enter a registered email address.
+4. Enter an incorrect password.
+5. Click the **Log in** button.
+
+**Expected Result:**
+
+The system should reject the login attempt and display an appropriate error message indicating that the credentials are incorrect. The user should remain unauthenticated.
+
+**Actual Result:**
+
+The system rejected the login attempt and displayed an error message indicating that the login was unsuccessful due to invalid credentials. The user remained unauthenticated.
+
+**Status:** PASS
+
+**Execution Date:** November 5, 2026
+
+**Evidence:** 
+
+[TC-LOGIN-002 Login Unsuccessful - Invalid Password](evidence/TC-LOGIN-002_Login_Unsuccessful_Invalid_Password.png)
