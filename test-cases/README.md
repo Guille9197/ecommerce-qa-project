@@ -484,3 +484,58 @@ The system rejected the login attempt and displayed an error message indicating 
 **Evidence:** 
 
 [TC-LOGIN-002 Login Unsuccessful - Invalid Password](evidence/TC-LOGIN-002_Login_Unsuccessful_Invalid_Password.png)
+
+### TC-LOGIN-003 — Login with Empty Password
+
+**Module:** Login & Authentication
+
+**Priority:** High
+
+**Preconditions:**
+- A registered user account exists.
+- The user is logged out.
+- The Login page is accessible.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Email | Registered test account email |
+| Password | Empty |
+| Account Status | Registered |
+| User Type | Registered Customer |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Click on **Log in**.
+3. Enter a registered email address.
+4. Leave the **Password** field empty.
+5. Click the **Log in** button.
+
+**Expected Result:**
+
+The system should reject the login attempt and display an appropriate validation message indicating that the password is required. The user should remain unauthenticated.
+
+**Actual Result:**
+
+The system rejected the login attempt when the password field was left empty. A validation message was displayed, and the user remained unauthenticated.
+
+**Status:** PASS
+
+**Execution Date:** November 5, 2026
+
+**Evidence:** 
+
+[TC-LOGIN-003 Login with Empty Password](evidence/TC-LOGIN-003_Login_Empty_Password.png)
