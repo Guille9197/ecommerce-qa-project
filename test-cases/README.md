@@ -650,3 +650,59 @@ The system successfully terminated the user's session. The user was redirected t
 **Evidence:** 
 
 [TC-LOGIN-005 Logout Customer Account](evidence/TC-LOGIN-005_Logout_Customer_Account.png)
+
+### TC-LOGIN-006 — Verify Account Access After Logout
+
+**Module:** Login & Authentication
+
+**Priority:** High
+
+**Preconditions:**
+- A registered user account exists.
+- The user has successfully logged in and then logged out.
+- The My Account page was previously accessed during the authenticated session.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| User Account | Registered customer account |
+| Initial Session Status | Logged Out |
+| Target Page | My Account |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Log in using valid customer credentials.
+3. Navigate to **My Account**.
+4. Log out using the **Log out** option.
+5. Use the browser's Back button to return to the previously visited My Account page.
+6. Refresh the page if necessary.
+7. Verify whether the account information remains accessible.
+
+**Expected Result:**
+
+The system should prevent access to protected customer account information after logout. The user should be redirected to the login page or another appropriate page requiring authentication.
+
+**Actual Result:**
+
+After logging out, the system prevented access to the protected customer account information. The user could not access the authenticated account page without logging in again.
+
+**Status:** PASS
+
+**Execution Date:** November 6, 2026
+
+**Evidence:** 
+
+[TC-LOGIN-006 Account Access After Logout](evidence/TC-LOGIN-006_Account_Access_After_Logout.png)
