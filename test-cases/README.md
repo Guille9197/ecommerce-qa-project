@@ -706,3 +706,59 @@ After logging out, the system prevented access to the protected customer account
 **Evidence:** 
 
 [TC-LOGIN-006 Account Access After Logout](evidence/TC-LOGIN-006_Account_Access_After_Logout.png)
+
+### TC-LOGIN-007 — Verify Session Persistence After Page Refresh
+
+**Module:** Login & Authentication
+
+**Priority:** Medium
+
+**Preconditions:**
+- A registered user account exists.
+- The user is successfully logged in.
+- The My Account page is accessible.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| User Account | Registered customer account |
+| Initial Session Status | Logged In |
+| Action | Refresh browser page |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Log in using valid customer credentials.
+3. Navigate to **My Account**.
+4. Verify that the account page is accessible.
+5. Refresh the browser page using F5 or the browser refresh button.
+6. Verify that the user remains logged in.
+7. Verify that the My Account page and customer information remain accessible.
+
+**Expected Result:**
+
+The system should preserve the authenticated session after the page refresh. The user should remain logged in and retain access to the My Account page without entering credentials again.
+
+**Actual Result:**
+
+The system successfully maintained the authenticated session after the page refresh. The user remained logged in and retained access to the My Account page without having to enter credentials again.
+
+**Status:** PASS
+
+**Execution Date:** November 6, 2026
+
+**Evidence:** 
+
+[TC-LOGIN-007 Session Persistence After Refresh](evidence/TC-LOGIN-007_Session_Persistence_After_Refresh.png)
