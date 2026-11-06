@@ -595,3 +595,58 @@ The system successfully authenticated the user and allowed access to the My Acco
 **Evidence:** 
 
 [TC-LOGIN-004 Access Customer Account](evidence/TC-LOGIN-004_Access_Customer_Account.png)
+
+### TC-LOGIN-005 — Logout from Customer Account
+
+**Module:** Login & Authentication
+
+**Priority:** High
+
+**Preconditions:**
+- A registered user account exists.
+- The user is successfully logged in.
+- The My Account page is accessible.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| User Account | Registered customer account |
+| Initial Session Status | Logged In |
+| Action | Log out |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Log in using valid customer credentials.
+3. Verify that the user is successfully logged in.
+4. Locate and click the **Log out** option.
+5. Verify that the user is redirected to the appropriate page.
+6. Check that the **Log in** and **Register** options are displayed in the navigation bar.
+
+**Expected Result:**
+
+The system should successfully terminate the user's session, redirect the user to the appropriate page, and display the logged-out navigation options.
+
+**Actual Result:**
+
+The system successfully terminated the user's session. The user was redirected to the appropriate page, and the **Log in** and **Register** options were displayed in the navigation bar.
+
+**Status:** PASS
+
+**Execution Date:** November 6, 2026
+
+**Evidence:** 
+
+[TC-LOGIN-005 Logout Customer Account](evidence/TC-LOGIN-005_Logout_Customer_Account.png)
