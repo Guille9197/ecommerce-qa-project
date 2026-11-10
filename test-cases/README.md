@@ -762,3 +762,56 @@ The system successfully maintained the authenticated session after the page refr
 **Evidence:** 
 
 [TC-LOGIN-007 Session Persistence After Refresh](evidence/TC-LOGIN-007_Session_Persistence_After_Refresh.png)
+
+### TC-SEARCH-001 — Search Products Using a Valid Keyword
+
+**Module:** Product Search & Filtering
+
+**Priority:** High
+
+**Preconditions:**
+- The nopCommerce Demo Store is accessible.
+- The product catalog contains products matching the search keyword.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Search Keyword | computer |
+| Search Type | Valid Keyword |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Locate the search field in the header.
+3. Enter the keyword `computer`.
+4. Click the Search button.
+5. Review the displayed search results.
+6. Verify that the results contain products relevant to the entered keyword.
+
+**Expected Result:**
+
+The system should display relevant products matching the search keyword. The search results page should load successfully and show the matching products.
+
+**Actual Result:**
+
+The system successfully displayed search results relevant to the keyword `computer`. The search results page loaded correctly and presented matching products.
+
+**Status:** PASS
+
+**Execution Date:** November 10, 2026
+
+**Evidence:** 
+
+[TC-SEARCH-001 Search Products Using a Valid Keyword](evidence/TC-SEARCH-001_Search_Products_Valid_Keyword.png)
