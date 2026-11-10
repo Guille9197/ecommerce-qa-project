@@ -815,3 +815,58 @@ The system successfully displayed search results relevant to the keyword `comput
 **Evidence:** 
 
 [TC-SEARCH-001 Search Products Using a Valid Keyword](evidence/TC-SEARCH-001_Search_Products_Valid_Keyword.png)
+
+### TC-SEARCH-002 — Search Products Using a Nonexistent Keyword
+
+**Module:** Product Search & Filtering
+
+**Priority:** Medium
+
+**Preconditions:**
+- The nopCommerce Demo Store is accessible.
+- The product catalog is available.
+- The selected keyword does not match any existing product.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Search Keyword | xyznonexistent123 |
+| Search Type | Nonexistent Keyword |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Locate the search field in the header.
+3. Enter the keyword `xyznonexistent123`.
+4. Click the Search button.
+5. Review the displayed search results.
+6. Verify that no products are returned for the nonexistent keyword.
+7. Check whether the system displays an appropriate no-results message.
+
+**Expected Result:**
+
+The system should display no matching products and provide an appropriate message indicating that no products were found. The search page should load without errors.
+
+**Actual Result:**
+
+The system successfully processed the search request. No matching products were displayed for the nonexistent keyword, and the search page handled the request without errors.
+
+**Status:** PASS
+
+**Execution Date:** November 10, 2026
+
+**Evidence:** 
+
+[TC-SEARCH-002 Search Products Using a Nonexistent Keyword](evidence/TC-SEARCH-002_Search_Products_Nonexistent_Keyword.png)
