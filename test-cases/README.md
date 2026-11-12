@@ -870,3 +870,56 @@ The system successfully processed the search request. No matching products were 
 **Evidence:** 
 
 [TC-SEARCH-002 Search Products Using a Nonexistent Keyword](evidence/TC-SEARCH-002_Search_Products_Nonexistent_Keyword.png)
+
+### TC-SEARCH-003 — Search with an Empty Search Field
+
+**Module:** Product Search & Filtering
+
+**Priority:** Medium
+
+**Preconditions:**
+- The nopCommerce Demo Store is accessible.
+- The product catalog is available.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Search Keyword | Empty |
+| Search Type | Empty Search |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Locate the search field in the header.
+3. Leave the search field empty.
+4. Click the Search button.
+5. Observe the system response.
+6. Verify whether the system displays search results, validation feedback, or an appropriate response.
+
+**Expected Result:**
+
+The system should handle an empty search request appropriately without causing an application error or unexpected behavior.
+
+**Actual Result:**
+
+The system prevented the empty search request from being processed and displayed the validation message: "Search term minimum length is 3 characters." The application handled the input correctly without displaying an application error.
+
+**Status:** PASS
+
+**Execution Date:** November 10, 2026
+
+**Evidence:** 
+
+[TC-SEARCH-003 Search with an Empty Search Field](evidence/TC-SEARCH-003_Search_Empty_Field.png)
