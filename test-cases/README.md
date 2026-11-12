@@ -1091,6 +1091,6 @@ The system successfully allowed navigation between search result pages. The disp
 **Execution Date:** November 12, 2026
 
 **Evidence:**
-- [TC-SEARCH-006 First Page](evidence/TC-SEARCH-006_Search_Results_First_Page)
-- [TC-SEARCH-006 Next Page](evidence/TC-SEARCH-006_Search_Results_Next_Page)
-- [TC-SEARCH-006 Previous Page](evidence/TC-SEARCH-006_Search_Results_Previous_Page)
+- [TC-SEARCH-006 First Page](evidence/TC-SEARCH-006_Search_Results_First_Page.png)
+- [TC-SEARCH-006 Next Page](evidence/TC-SEARCH-006_Search_Results_Next_Page.png)
+- [TC-SEARCH-006 Previous Page](evidence/TC-SEARCH-006_Search_Results_Previous_Page.png)
