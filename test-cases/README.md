@@ -923,3 +923,57 @@ The system prevented the empty search request from being processed and displayed
 **Evidence:** 
 
 [TC-SEARCH-003 Search with an Empty Search Field](evidence/TC-SEARCH-003_Search_Empty_Field.png)
+
+### TC-SEARCH-004 — Search Using a Partial Product Name
+
+**Module:** Product Search & Filtering
+
+**Priority:** Medium
+
+**Preconditions:**
+- The nopCommerce Demo Store is accessible.
+- The product catalog contains products with names matching the selected partial keyword.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Search Keyword | `comp` |
+| Search Type | Partial Product Name |
+| Minimum Search Length | 3 characters |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Locate the search field in the header.
+3. Enter the partial keyword `comp`.
+4. Click the Search button.
+5. Review the displayed search results.
+6. Verify whether products containing or matching the partial keyword are displayed.
+
+**Expected Result:**
+
+The system should return relevant products matching the partial keyword, even when the complete product name is not provided.
+
+**Actual Result:**
+
+Not Executed.
+
+**Status:** Not Executed
+
+**Execution Date:** Pending
+
+**Evidence:** 
+
+[TC-SEARCH-004 Search Using a Partial Product Name](evidence/TC-SEARCH-004_Search_Partial_Product_Name.png)
