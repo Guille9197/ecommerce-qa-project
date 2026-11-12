@@ -1034,3 +1034,63 @@ The system successfully displayed products relevant to the search keyword `compu
 **Evidence:** 
 
 [TC-SEARCH-005 Search Results Relevance](evidence/TC-SEARCH-005_Search_Results_Relevance.png)
+
+### TC-SEARCH-006 — Navigate Through Search Results
+
+**Module:** Product Search & Filtering
+
+**Priority:** Medium
+
+**Preconditions:**
+- The nopCommerce Demo Store is accessible.
+- The product catalog contains enough matching products to generate multiple result pages.
+- The search functionality is available.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Search Keyword | computer |
+| Search Type | Search Results Pagination |
+| Expected Results | Multiple pages of search results |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Locate the search field in the header.
+3. Enter the keyword `computer`.
+4. Click the Search button.
+5. Review the displayed search results.
+6. Check whether pagination controls are available.
+7. Navigate to the next page.
+8. Verify that a different set of search results is displayed.
+9. Navigate back to the previous page.
+10. Verify that the previous search results are displayed correctly.
+
+**Expected Result:**
+
+The system should allow users to navigate between available search result pages. The displayed products should update correctly when changing pages, without errors or unexpected behavior.
+
+**Actual Result:**
+
+The system successfully allowed navigation between search result pages. The displayed products updated correctly when moving to the next page, and the previous page was accessible again without errors.
+
+**Status:** PASS
+
+**Execution Date:** November 12, 2026
+
+**Evidence:**
+- [TC-SEARCH-006 First Page](evidence/TC-SEARCH-006_Search_Results_First_Page)
+- [TC-SEARCH-006 Next Page](evidence/TC-SEARCH-006_Search_Results_Next_Page)
+- [TC-SEARCH-006 Previous Page](evidence/TC-SEARCH-006_Search_Results_Previous_Page)
