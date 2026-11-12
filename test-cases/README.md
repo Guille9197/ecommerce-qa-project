@@ -1149,3 +1149,59 @@ The system successfully navigated to the **Build your own computer** product det
 **Evidence:** 
 
 [TC-PROD-001 Verify Product Details Page](evidence/TC-PROD-001_Product_Details_Page.png)
+
+### TC-PROD-002 — Verify Product Name and Description
+
+**Module:** Product Details
+
+**Priority:** High
+
+**Preconditions:**
+- The nopCommerce Demo Store is accessible.
+- The product "Build your own computer" exists in the product catalog.
+- The product details page is accessible.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Product Name | Build your own computer |
+| Product Category | Computers |
+| Information to Validate | Product Name and Description |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Navigate to the Computers category.
+3. Open the "Build your own computer" product.
+4. Locate the product name displayed on the details page.
+5. Verify that the product name matches the selected product.
+6. Locate the product description.
+7. Verify that the description is displayed correctly and is readable.
+
+**Expected Result:**
+
+The product details page should display the correct product name and its corresponding description. Both elements should be visible, readable, and properly presented.
+
+**Actual Result:**
+
+The product details page successfully displayed the correct product name, "Build your own computer", and its corresponding description. Both elements were visible and readable.
+
+**Status:** PASS
+
+**Execution Date:** November 12, 2026
+
+**Evidence:** 
+
+[TC-PROD-002 Product Name and Description](evidence/TC-PROD-002_Product_Name_Description.png)
