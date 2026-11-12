@@ -977,3 +977,60 @@ Not Executed.
 **Evidence:** 
 
 [TC-SEARCH-004 Search Using a Partial Product Name](evidence/TC-SEARCH-004_Search_Partial_Product_Name.png)
+
+### TC-SEARCH-005 — Verify Search Results Relevance
+
+**Module:** Product Search & Filtering
+
+**Priority:** High
+
+**Preconditions:**
+- The nopCommerce Demo Store is accessible.
+- The product catalog contains products related to the search keyword.
+- The search functionality is available.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Search Keyword | computer |
+| Search Type | Results Relevance |
+| Expected Results | Products relevant to the keyword |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Locate the search field in the header.
+3. Enter the keyword `computer`.
+4. Click the Search button.
+5. Review all displayed search results.
+6. Inspect the product names and descriptions.
+7. Verify that the displayed products are relevant to the search keyword.
+8. Check whether unrelated products are included in the results.
+
+**Expected Result:**
+
+The system should display products relevant to the entered search keyword. Unrelated products should not appear in the search results.
+
+**Actual Result:**
+
+The system successfully displayed products relevant to the search keyword `computer`. The search results matched the intended search criteria.
+
+**Status:** PASS
+
+**Execution Date:** November 12, 2026
+
+**Evidence:** 
+
+[TC-SEARCH-005 Search Results Relevance](evidence/TC-SEARCH-005_Search_Results_Relevance.png)
