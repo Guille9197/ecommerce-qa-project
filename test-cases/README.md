@@ -1094,3 +1094,58 @@ The system successfully allowed navigation between search result pages. The disp
 - [TC-SEARCH-006 First Page](evidence/TC-SEARCH-006_Search_Results_First_Page.png)
 - [TC-SEARCH-006 Next Page](evidence/TC-SEARCH-006_Search_Results_Next_Page.png)
 - [TC-SEARCH-006 Previous Page](evidence/TC-SEARCH-006_Search_Results_Previous_Page.png)
+
+- ### TC-PROD-001 — Verify Product Details Page
+
+**Module:** Product Details
+
+**Priority:** High
+
+**Preconditions:**
+- The nopCommerce Demo Store is accessible.
+- The product catalog contains available products.
+- The user can access product listings.
+
+**Test Data:**
+
+| Field | Test Value |
+|---|---|
+| Product Name | Build your own computer |
+| Product Category | Computers |
+| Navigation Method | Product Listing |
+
+**Environment Details:**
+
+| Property | Value |
+|---|---|
+| Application | nopCommerce Demo Store |
+| Environment | Public Demo |
+| Platform | Web |
+| Browser | Google Chrome |
+| Operating System | Windows |
+| Test Type | Manual |
+| Test URL | https://demo.nopcommerce.com/ |
+
+**Test Steps:**
+1. Open the nopCommerce Demo Store.
+2. Navigate to the Computers category.
+3. Locate the product **Build your own computer**.
+4. Click the product name or image.
+5. Verify that the product details page loads successfully.
+6. Verify that the page displays the main product information and purchasing options.
+
+**Expected Result:**
+
+The system should successfully navigate to the selected product details page. The page should display the product information and available purchasing options without errors.
+
+**Actual Result:**
+
+The system successfully navigated to the **Build your own computer** product details page. The page loaded correctly and displayed the product information and available purchasing options.
+
+**Status:** PASS
+
+**Execution Date:** November 12, 2026
+
+**Evidence:** 
+
+[TC-PROD-001 Verify Product Details Page](evidence/TC-PROD-001_Product_Details_Page.png)
