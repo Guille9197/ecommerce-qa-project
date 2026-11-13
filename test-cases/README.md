@@ -1251,3 +1251,52 @@ November 12, 2026
 ### Evidence
 
 [TC-PROD-003 Verify Product Price](evidence/TC-PROD-003_Verify_Product_Price.png)
+
+# TC-PROD-004 — Verify Product Images
+
+**Module:** Product Details  
+**Priority:** Medium  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- The product details page is available.
+
+### Test Data
+- **Product:** Build your own computer
+- **URL:** https://demo.nopcommerce.com/build-your-own-computer
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the **Computers** category.
+3. Navigate to the **Desktops** subcategory.
+4. Select **Build your own computer**.
+5. Locate the product image displayed on the product details page.
+6. Verify that the product image loads correctly.
+7. Locate the additional product image thumbnails.
+8. Verify that the thumbnails are displayed correctly.
+
+### Expected Result
+- The main product image loads successfully.
+- The image corresponds to the selected product.
+- Additional product thumbnails are displayed correctly.
+- Selecting a thumbnail updates the main product image accordingly.
+
+### Actual Result
+The main product image failed to load. A broken image icon and the alternative text "Picture of Build your own computer" were displayed instead. The additional product thumbnails were visible.
+
+### Status
+FAIL
+
+### Execution Date
+November 12, 2026
+
+### Evidence
+
+[TC-PROD-004 Verify Product Images](evidence/TC-PROD-004_Verify_Product_Images.png)
