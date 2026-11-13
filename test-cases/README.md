@@ -1341,3 +1341,60 @@ November 12, 2026
 ### Evidence
 
 [TC-PROD-005 Verify Product Specifications](evidence/TC-PROD-005_Verify_Product_Specifications.png)
+
+# TC-PROD-006 — Verify Product Availability and Quantity Handling
+
+**Module:** Product Details  
+**Priority:** High  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- The product details page is available.
+
+### Test Data
+- **Product:** Build your own computer
+- **Quantity:** 100
+- **URL:** https://demo.nopcommerce.com/build-your-own-computer
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the **Computers** category.
+3. Navigate to the **Desktops** subcategory.
+4. Select **Build your own computer**.
+5. Locate the product availability information.
+6. Verify whether the application displays the available stock quantity.
+7. Enter `100` in the quantity field.
+8. Verify that the entered quantity is fully visible and properly displayed.
+9. Click **Add to cart**.
+10. Observe the application's response.
+11. Verify whether the operation completes successfully or displays an appropriate validation message.
+
+### Expected Result
+- Product availability information should be displayed when provided by the application.
+- The quantity field should display the entered value completely without clipping or visual defects.
+- The application should handle quantity requests appropriately.
+- If the requested quantity exceeds available stock or applicable purchase limits, a clear validation message should be displayed.
+- The loading indicator should not remain indefinitely.
+- The user should receive clear feedback about the result of the operation.
+
+### Actual Result
+- The application did not display the exact available stock quantity.
+- After entering `100`, the quantity value appeared visually clipped inside the quantity field.
+- After clicking **Add to cart**, the loading indicator appeared and remained visible without completing the operation or displaying a validation message.
+
+### Status
+FAIL
+
+### Execution Date
+November 12, 2026
+
+### Evidence
+
+[TC-PROD-006 Verify Product Availability](evidence/TC-PROD-006_Verify_Product_Availability.png)
