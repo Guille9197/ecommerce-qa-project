@@ -1249,4 +1249,5 @@ PASS
 November 12, 2026
 
 ### Evidence
-- [TC-PROD-003 Verify Product Price](TC-PROD-003_Verify_Product_Price.png)
+
+[TC-PROD-003 Verify Product Price](evidence/TC-PROD-003_Verify_Product_Price.png)
