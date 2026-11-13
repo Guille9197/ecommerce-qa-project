@@ -1292,3 +1292,52 @@ November 12, 2026
 ### Evidence
 
 [TC-PROD-004 Verify Product Images](evidence/TC-PROD-004_Verify_Product_Images.png)
+
+# TC-PROD-005 — Verify Product Specifications
+
+**Module:** Product Details  
+**Priority:** Medium  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- The product details page is available.
+
+### Test Data
+- **Product:** Build your own computer
+- **URL:** https://demo.nopcommerce.com/build-your-own-computer
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the **Computers** category.
+3. Navigate to the **Desktops** subcategory.
+4. Select **Build your own computer**.
+5. Scroll down to the product description and specifications section.
+6. Locate the available product information.
+7. Verify that the product specifications are displayed correctly.
+8. Check that the information corresponds to the selected product.
+
+### Expected Result
+- The product specifications section is displayed when available.
+- Product information is readable and properly formatted.
+- The displayed specifications correspond to the selected product.
+- No broken layout or missing information is observed.
+
+### Actual Result
+The product specifications and available product information were displayed correctly. The information was readable and properly presented without visible layout issues.
+
+### Status
+PASS
+
+### Execution Date
+November 12, 2026
+
+### Evidence
+
+[TC-PROD-005 Verify Product Specifications](evidence/TC-PROD-005_Verify_Product_Specifications.png)
