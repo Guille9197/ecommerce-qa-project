@@ -1398,3 +1398,59 @@ November 12, 2026
 ### Evidence
 
 [TC-PROD-006 Verify Product Availability](evidence/TC-PROD-006_Verify_Product_Availability.png)
+
+# TC-CART-001 — Add Product to Shopping Cart
+
+**Module:** Shopping Cart  
+**Priority:** High  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- The product details page is available.
+- The shopping cart is accessible.
+
+### Test Data
+- **Product:** Apple MacBook Pro 13-inch
+- **Quantity:** 2
+- **URL:** https://demo.nopcommerce.com/
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the **Computers** category.
+3. Navigate to the **Notebooks** subcategory.
+4. Select **Apple MacBook Pro 13-inch**.
+5. Verify that the product details page is displayed.
+6. Check the minimum quantity requirement.
+7. Set the quantity to `2`.
+8. Click **Add to cart**.
+9. Wait for the application to process the request.
+10. Verify that a success notification or confirmation message is displayed.
+11. Open the shopping cart.
+12. Verify that the selected product appears in the cart with a quantity of `2`.
+
+### Expected Result
+- The product minimum quantity requirement is correctly enforced.
+- The product is successfully added to the shopping cart with a quantity of `2`.
+- A confirmation notification is displayed.
+- The shopping cart contains the selected product.
+- The displayed quantity matches the requested quantity.
+
+### Actual Result
+The product was successfully added to the shopping cart with a quantity of `2`. The cart displayed the selected product and the expected quantity.
+
+### Status
+PASS
+
+### Execution Date
+November 13, 2026
+
+### Evidence
+
+[TC-CART-001 Add Product to Shopping Cart](evidence/TC-CART-001_Add_Product_To_Cart.png)
