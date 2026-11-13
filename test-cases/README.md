@@ -1205,3 +1205,48 @@ The product details page successfully displayed the correct product name, "Build
 **Evidence:** 
 
 [TC-PROD-002 Product Name and Description](evidence/TC-PROD-002_Product_Name_Description.png)
+
+# TC-PROD-003 — Verify Product Price
+
+**Module:** Product Details  
+**Priority:** High  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- The product details page is available.
+
+### Test Data
+- **Product:** Build your own computer
+- **URL:** https://demo.nopcommerce.com/
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the **Computers** category.
+3. Navigate to the **Desktops** subcategory.
+4. Select **Build your own computer**.
+5. Locate the product price displayed on the product details page.
+6. Verify that the price is visible and formatted correctly.
+
+### Expected Result
+- The product price is displayed on the product details page.
+- The price is clearly visible and uses the expected currency format.
+- The displayed price is consistent with the selected product and its configuration.
+
+### Actual Result
+The product price was successfully displayed on the product details page and was clearly visible in the expected currency format.
+
+### Status
+PASS
+
+### Execution Date
+November 12, 2026
+
+### Evidence
+- [TC-PROD-003 Verify Product Price](TC-PROD-003_Verify_Product_Price.md)
