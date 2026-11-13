@@ -924,55 +924,47 @@ The system prevented the empty search request from being processed and displayed
 
 [TC-SEARCH-003 Search with an Empty Search Field](evidence/TC-SEARCH-003_Search_Empty_Field.png)
 
-### TC-SEARCH-004 — Search Using a Partial Product Name
+# TC-SEARCH-004 — Search Using a Partial Product Name
 
-**Module:** Product Search & Filtering
+**Module:** Product Search & Filtering  
+**Priority:** Medium  
+**Test Type:** Manual Functional Testing
 
-**Priority:** Medium
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- The search functionality is available.
 
-**Preconditions:**
-- The nopCommerce Demo Store is accessible.
-- The product catalog contains products with names matching the selected partial keyword.
+### Test Data
+- **Search Keyword:** `comp`
+- **URL:** https://demo.nopcommerce.com/
 
-**Test Data:**
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
 
-| Field | Test Value |
-|---|---|
-| Search Keyword | `comp` |
-| Search Type | Partial Product Name |
-| Minimum Search Length | 3 characters |
-
-**Environment Details:**
-
-| Property | Value |
-|---|---|
-| Application | nopCommerce Demo Store |
-| Environment | Public Demo |
-| Platform | Web |
-| Browser | Google Chrome |
-| Operating System | Windows |
-| Test Type | Manual |
-| Test URL | https://demo.nopcommerce.com/ |
-
-**Test Steps:**
-1. Open the nopCommerce Demo Store.
-2. Locate the search field in the header.
-3. Enter the partial keyword `comp`.
-4. Click the Search button.
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Locate the search field.
+3. Enter the partial product name `comp`.
+4. Click the search button.
 5. Review the displayed search results.
-6. Verify whether products containing or matching the partial keyword are displayed.
+6. Verify that products matching the partial search term are displayed.
 
-**Expected Result:**
+### Expected Result
+- The search functionality accepts the partial product name.
+- Relevant products matching the entered keyword are displayed.
+- Search results are presented correctly.
 
-The system should return relevant products matching the partial keyword, even when the complete product name is not provided.
+### Actual Result
+The search functionality successfully processed the partial keyword `comp` and displayed relevant matching products.
 
-**Actual Result:**
+### Status
+PASS
 
-Not Executed.
-
-**Status:** Not Executed
-
-**Execution Date:** Pending
+### Execution Date
+November 12, 2026
 
 **Evidence:** 
 
