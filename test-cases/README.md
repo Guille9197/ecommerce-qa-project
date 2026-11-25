@@ -1507,3 +1507,56 @@ November 25, 2026
 ### Evidence
 
 [TC-CART-002 Update Product Quantity](evidence/TC-CART-002_Update_Product_Quantity.png)
+
+# TC-CART-003 — Remove Product from Shopping Cart
+
+**Module:** Shopping Cart  
+**Priority:** High  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- At least one product has been added to the shopping cart.
+- The shopping cart contains Apple MacBook Pro 13-inch.
+
+### Test Data
+- **Product:** Apple MacBook Pro 13-inch
+- **Initial Quantity:** 3
+- **URL:** https://demo.nopcommerce.com/
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the shopping cart.
+3. Locate Apple MacBook Pro 13-inch.
+4. Verify that the product is displayed in the cart.
+5. Select the checkbox associated with the product's **Remove** option.
+6. Click **Update shopping cart**.
+7. Wait for the application to process the request.
+8. Verify that the selected product is no longer displayed in the shopping cart.
+9. Verify that the cart subtotal and total are updated accordingly.
+10. Verify that an empty-cart message is displayed if no other products remain.
+
+### Expected Result
+- The selected product is successfully removed from the shopping cart.
+- The removed product is no longer displayed in the cart.
+- The cart subtotal and total are recalculated correctly.
+- If the cart contains no other products, an appropriate empty-cart message is displayed.
+
+### Actual Result
+The product was successfully removed from the shopping cart. The cart was updated accordingly, and the removed product was no longer displayed.
+
+### Status
+PASS
+
+### Execution Date
+November 25, 2026
+
+### Evidence
+
+[TC-CART-003 Remove Product from Shopping Cart](evidence/TC-CART-003_Remove_Product_From_Cart.png)
