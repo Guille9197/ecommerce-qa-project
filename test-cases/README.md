@@ -1454,3 +1454,56 @@ November 13, 2026
 ### Evidence
 
 [TC-CART-001 Add Product to Shopping Cart](evidence/TC-CART-001_Add_Product_To_Cart.png)
+
+# TC-CART-002 — Update Product Quantity in Shopping Cart
+
+**Module:** Shopping Cart  
+**Priority:** High  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- At least one product has been successfully added to the shopping cart.
+- The shopping cart contains Apple MacBook Pro 13-inch with a quantity of 2.
+
+### Test Data
+- **Product:** Apple MacBook Pro 13-inch
+- **Initial Quantity:** 2
+- **Updated Quantity:** 3
+- **URL:** https://demo.nopcommerce.com/
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the shopping cart.
+3. Locate Apple MacBook Pro 13-inch.
+4. Verify that the current quantity is `2`.
+5. Change the quantity to `3`.
+6. Click the **Update shopping cart** button.
+7. Wait for the application to process the update.
+8. Verify that the product quantity is updated to `3`.
+9. Verify that the subtotal and total amounts are recalculated accordingly.
+
+### Expected Result
+- The shopping cart accepts the updated quantity.
+- The product quantity changes from `2` to `3`.
+- The subtotal and total amounts are recalculated correctly.
+- The updated cart information is displayed without errors.
+
+### Actual Result
+The product quantity was successfully updated from `2` to `3`. The shopping cart reflected the updated quantity and recalculated the corresponding subtotal and total amounts correctly.
+
+### Status
+PASS
+
+### Execution Date
+November 25, 2026
+
+### Evidence
+
+[TC-CART-002 Update Product Quantity](evidence/TC-CART-002_Update_Product_Quantity.png)
