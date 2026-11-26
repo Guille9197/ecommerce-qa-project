@@ -1613,3 +1613,55 @@ November 26, 2026
 ### Evidence
 
 [TC-CART-004 Verify Cart Subtotal Calculation](evidence/TC-CART-004_Verify_Cart_Subtotal_Calculation.png)
+
+# TC-CART-005 — Verify Shopping Cart Persistence After Page Refresh
+
+**Module:** Shopping Cart  
+**Priority:** Medium  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- At least one product has been added to the shopping cart.
+- The shopping cart contains Apple MacBook Pro 13-inch with a quantity of 2.
+
+### Test Data
+- **Product:** Apple MacBook Pro 13-inch
+- **Quantity:** 2
+- **URL:** https://demo.nopcommerce.com/
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the shopping cart.
+3. Verify that Apple MacBook Pro 13-inch is displayed with a quantity of `2`.
+4. Refresh the browser page.
+5. Wait for the shopping cart page to reload.
+6. Verify that the product is still displayed.
+7. Verify that the product quantity remains `2`.
+8. Verify that the subtotal and total amounts are still displayed correctly.
+
+### Expected Result
+- The shopping cart retains its contents after refreshing the page.
+- The selected product remains displayed.
+- The product quantity remains unchanged.
+- The subtotal and total amounts remain consistent.
+- No unexpected errors occur during page refresh.
+
+### Actual Result
+The shopping cart successfully retained its contents after refreshing the browser page. Apple MacBook Pro 13-inch remained displayed with a quantity of `2`, and the subtotal and total amounts remained consistent.
+
+### Status
+PASS
+
+### Execution Date
+November 26, 2026
+
+### Evidence
+
+[TC-CART-005 Cart Persistence After Refresh](evidence/TC-CART-005_Cart_Persistence_After_Refresh.png)
