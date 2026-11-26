@@ -1865,3 +1865,53 @@ PASS
 ### Evidence
 
 [TC-CHECKOUT-002 Verify Guest Checkout Option](evidence/TC-CHECKOUT-002_Verify_Guest_Checkout_Option.png)
+
+# TC-CHECKOUT-003 — Verify Checkout Billing Address
+
+**Module:** Checkout  
+**Priority:** High  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user is logged out.
+- At least one product has been added to the shopping cart.
+- Guest checkout is available.
+
+### Test Data
+- Product: Apple MacBook Pro 13-inch
+- Quantity: 2
+- Billing information: Valid test customer details.
+
+### Environment Details
+- **Application:** nopCommerce Demo Store
+- **Environment:** Public Demo Store
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **OS:** Windows
+- **URL:** https://demo.nopcommerce.com/
+
+### Test Steps
+1. Open the nopCommerce Demo Store.
+2. Add a product to the shopping cart.
+3. Open the Shopping Cart.
+4. Click **Checkout**.
+5. Select **Checkout as Guest**.
+6. Review the Billing Address section.
+7. Enter the required billing information.
+8. Click **Continue**.
+
+### Expected Result
+The system should accept valid billing information and allow the user to proceed to the next checkout step.
+
+### Actual Result
+The billing information was accepted successfully, and the checkout process proceeded to the next step.
+
+### Status
+PASS
+
+### Execution Date
+2026-11-26
+
+### Evidence
+
+[TC-CHECKOUT-003 Verify Checkout Billing Address](evidence/TC-CHECKOUT-003_Verify_Checkout_Billing_Address.png)
