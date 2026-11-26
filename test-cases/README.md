@@ -1560,3 +1560,56 @@ November 25, 2026
 ### Evidence
 
 [TC-CART-003 Remove Product from Shopping Cart](evidence/TC-CART-003_Remove_Product_From_Cart.png)
+
+# TC-CART-004 — Verify Shopping Cart Subtotal Calculation
+
+**Module:** Shopping Cart  
+**Priority:** High  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- At least one product can be added to the shopping cart.
+- The shopping cart is accessible.
+
+### Test Data
+- **Product:** Apple MacBook Pro 13-inch
+- **Quantity:** 2
+- **URL:** https://demo.nopcommerce.com/
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the **Computers** category.
+3. Navigate to the **Notebooks** subcategory.
+4. Select **Apple MacBook Pro 13-inch**.
+5. Add the product to the shopping cart using its minimum required quantity of `2`.
+6. Open the shopping cart.
+7. Locate the product's unit price and quantity.
+8. Verify that the displayed subtotal corresponds to the unit price multiplied by the quantity.
+9. Verify that the cart total is displayed correctly, taking into account any applicable additional charges or discounts.
+
+### Expected Result
+- The product unit price is displayed correctly.
+- The selected quantity is displayed correctly.
+- The subtotal is calculated as unit price multiplied by quantity.
+- The cart total reflects the applicable charges and discounts.
+- No calculation errors are displayed.
+
+### Actual Result
+The shopping cart successfully displayed the product unit price, selected quantity, and corresponding subtotal. The subtotal calculation matched the expected amount for the selected quantity.
+
+### Status
+PASS
+
+### Execution Date
+November 26, 2026
+
+### Evidence
+
+[TC-CART-004 Verify Cart Subtotal Calculation](evidence/TC-CART-004_Verify_Cart_Subtotal_Calculation.png)
