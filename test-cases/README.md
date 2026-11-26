@@ -1819,3 +1819,49 @@ November 26, 2026
 ### Evidence
 
 [TC-CHECKOUT-001 Proceed to Checkout](evidence/TC-CHECKOUT-001_Proceed_To_Checkout.png)
+
+# TC-CHECKOUT-002 — Verify Guest Checkout Option
+
+**Module:** Checkout  
+**Priority:** Medium  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user is not logged in.
+- At least one product has been added to the shopping cart.
+
+### Test Data
+- Product: Apple MacBook Pro 13-inch
+- Quantity: 2
+
+### Environment Details
+- **Application:** nopCommerce Demo Store
+- **Environment:** Public Demo Store
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **OS:** Windows
+- **URL:** https://demo.nopcommerce.com/
+
+### Test Steps
+1. Open the nopCommerce Demo Store.
+2. Ensure you are logged out.
+3. Add a product to the shopping cart.
+4. Open the Shopping Cart.
+5. Click the **Checkout** button.
+6. Review the checkout options displayed.
+
+### Expected Result
+The checkout page should display the available checkout options, including **Checkout as Guest**, if guest checkout is supported.
+
+### Actual Result
+The guest checkout option was available, and the test was completed successfully without requiring the user to log in.
+
+### Status
+PASS
+
+### Execution Date
+2026-11-26
+
+### Evidence
+
+[TC-CHECKOUT-002 Verify Guest Checkout Option](evidence/TC-CHECKOUT-002_Verify_Guest_Checkout_Option.png)
