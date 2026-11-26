@@ -1766,3 +1766,56 @@ November 26, 2026
 ### Evidence
 
 [TC-CART-007 Verify Shopping Cart Empty State](evidence/TC-CART-007_Verify_Shopping_Cart_Empty_State.png)
+
+# TC-CHECKOUT-001 — Proceed to Checkout
+
+**Module:** Checkout  
+**Priority:** Critical  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- At least one product has been added to the shopping cart.
+- The shopping cart contains Apple MacBook Pro 13-inch with a quantity of 2.
+
+### Test Data
+- **Product:** Apple MacBook Pro 13-inch
+- **Quantity:** 2
+- **URL:** https://demo.nopcommerce.com/
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the shopping cart.
+3. Verify that Apple MacBook Pro 13-inch is displayed with a quantity of `2`.
+4. Review the displayed order subtotal and total.
+5. Accept the Terms of service checkbox, if required.
+6. Click the **Checkout** button.
+7. Wait for the application to process the request.
+8. Verify that the checkout page is displayed.
+9. Verify that the application presents the appropriate checkout options or steps.
+
+### Expected Result
+- The application allows the user to initiate checkout.
+- The user is successfully redirected to the checkout page.
+- The checkout process displays the appropriate next steps.
+- The shopping cart contents are preserved when entering checkout.
+- No unexpected errors occur.
+
+### Actual Result
+The application successfully redirected the user to the checkout page. The checkout process displayed the appropriate next steps, and the shopping cart contents were preserved.
+
+### Status
+PASS
+
+### Execution Date
+November 26, 2026
+
+### Evidence
+
+[TC-CHECKOUT-001 Proceed to Checkout](evidence/TC-CHECKOUT-001_Proceed_To_Checkout.png)
