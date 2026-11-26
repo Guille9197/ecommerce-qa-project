@@ -1665,3 +1665,55 @@ November 26, 2026
 ### Evidence
 
 [TC-CART-005 Cart Persistence After Refresh](evidence/TC-CART-005_Cart_Persistence_After_Refresh.png)
+
+# TC-CART-006 — Verify Shopping Cart Continues Shopping Functionality
+
+**Module:** Shopping Cart  
+**Priority:** Medium  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- At least one product has been added to the shopping cart.
+- The shopping cart contains Apple MacBook Pro 13-inch with a quantity of 2.
+
+### Test Data
+- **Product:** Apple MacBook Pro 13-inch
+- **Quantity:** 2
+- **URL:** https://demo.nopcommerce.com/
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the shopping cart.
+3. Verify that Apple MacBook Pro 13-inch is displayed with a quantity of `2`.
+4. Locate and click the **Continue shopping** button.
+5. Verify that the application redirects the user to the store.
+6. Navigate to another product category.
+7. Return to the shopping cart.
+8. Verify that Apple MacBook Pro 13-inch is still displayed with a quantity of `2`.
+
+### Expected Result
+- The **Continue shopping** button redirects the user to the store.
+- The user can browse other product categories.
+- The existing shopping cart contents are preserved.
+- The product quantity remains unchanged.
+- No unexpected errors occur during navigation.
+
+### Actual Result
+The **Continue shopping** button successfully redirected the user to the store. The user was able to navigate through other product categories, and the shopping cart retained Apple MacBook Pro 13-inch with the original quantity of `2`.
+
+### Status
+PASS
+
+### Execution Date
+November 26, 2026
+
+### Evidence
+
+[TC-CART-006 Continue Shopping Functionality](evidence/TC-CART-006_Continue_Shopping_Functionality.png)
