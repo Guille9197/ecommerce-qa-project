@@ -1717,3 +1717,52 @@ November 26, 2026
 ### Evidence
 
 [TC-CART-006 Continue Shopping Functionality](evidence/TC-CART-006_Continue_Shopping_Functionality.png)
+
+# TC-CART-007 — Verify Shopping Cart Empty State
+
+**Module:** Shopping Cart  
+**Priority:** Medium  
+**Test Type:** Manual Functional Testing
+
+### Preconditions
+- The user can access the nopCommerce Demo Store.
+- The shopping cart contains at least one product.
+
+### Test Data
+- **URL:** https://demo.nopcommerce.com/cart
+
+### Environment Details
+- **Platform:** Web
+- **Browser:** Google Chrome
+- **Operating System:** Windows
+- **Environment:** Public Demo Store
+
+### Test Steps
+1. Navigate to the nopCommerce Demo Store.
+2. Open the shopping cart.
+3. Verify that at least one product is displayed.
+4. Select the **Remove** checkbox for each product in the cart.
+5. Click **Update shopping cart**.
+6. Wait for the application to process the request.
+7. Verify that all products have been removed.
+8. Check the message displayed in the empty shopping cart.
+9. Verify that no product items or prices remain in the cart.
+
+### Expected Result
+- All selected products are successfully removed from the shopping cart.
+- The shopping cart displays an appropriate empty-cart message.
+- No product items or prices remain displayed.
+- The shopping cart page remains accessible without errors.
+
+### Actual Result
+All products were successfully removed from the shopping cart. The application displayed the empty-cart message, and no product items or prices remained visible.
+
+### Status
+PASS
+
+### Execution Date
+November 26, 2026
+
+### Evidence
+
+[TC-CART-007 Verify Shopping Cart Empty State](evidence/TC-CART-007_Verify_Shopping_Cart_Empty_State.png)
